@@ -89,21 +89,22 @@ panel2.add(b2);
 JPanel panel3=new JPanel();
 panel3.add(a3);
 panel3.add(b3);
+JPanel panel6=new JPanel();
+panel6.add(a4);
+panel6.add(b4);
 JPanel panel4=new JPanel();
 panel4.add(c1);
 panel4.add(c2);
 panel4.add(c3);
-JPanel panel6=new JPanel();
-panel6.add(a4);
-panel6.add(b4);
-JPanel  leftpanel=new JPanel(new GridLayout(4,1));
+
+JPanel  leftpanel=new JPanel(new GridLayout(5,2));
 leftpanel.add(panel1);
 leftpanel.add(panel2);
 leftpanel.add(panel3);
-leftpanel.add(panel4);
 leftpanel.add(panel6);
+leftpanel.add(panel4);
 JScrollPane panel5=new JScrollPane(text);
-panel5.setPreferredSize(new Dimension(400,150));
+panel5.setPreferredSize(new Dimension(300,200));
 add(leftpanel);
 add(panel5);
 }
